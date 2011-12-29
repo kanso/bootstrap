@@ -37,7 +37,6 @@ Create a css/less file ```static/css/example.less``` for your site that includes
 
 ```css
 @import "packages/bootstrap/bootstrap/lib/bootstrap.less";
-
 /* use bootstrap and less! */
 body { background-color: @pink; }
 ```

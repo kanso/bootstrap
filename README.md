@@ -33,9 +33,7 @@ template:
 
 ### Compiled CSS
 
-Create a css/less file for your site that includes bootstrap:
-
-file: static/css/example.less
+Create a css/less file ```static/css/example.less``` for your site that includes bootstrap:
 
 ```css
 @import "packages/bootstrap/bootstrap/lib/bootstrap.less";

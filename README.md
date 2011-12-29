@@ -76,7 +76,7 @@ Tell Kanso to compile the less file and create an attachment:
 If you prefer to include the static file bootstrap.min.css in your project,
 simply modify your template:
 
-```
+```html
 <link type="text/css" src="packages/bootstrap/bootstrap/bootstrap.min.css" />
 ```
 
@@ -92,4 +92,3 @@ kanso push example
 
 Until 2.0 is released you can browse the docs locally in the package directory
 under ```bootstrap/docs/index.html```.
-

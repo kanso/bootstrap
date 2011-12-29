@@ -23,14 +23,6 @@ kanso install
 You can simply include the bootstrap library as a static library or configure
 bootstrap to be compiled with less.
 
-### Static CSS
-
-Now you can include the bootstrap.min.css in your project by modifying your
-template:
-
-```
-<link type="text/css" src="packages/bootstrap/bootstrap/bootstrap.min.css" />
-```
 
 ### Compiled CSS
 
@@ -77,6 +69,15 @@ Tell Kanso to compile the less file and create an attachment:
         "bootstrap": null
     }
 }
+```
+
+### Static CSS
+
+If you prefer to include the static file bootstrap.min.css in your project,
+simply modify your template:
+
+```
+<link type="text/css" src="packages/bootstrap/bootstrap/bootstrap.min.css" />
 ```
 
 ## Push

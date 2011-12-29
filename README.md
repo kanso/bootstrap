@@ -49,7 +49,7 @@ compiles to.
 ```html
 <html>
   <head>
-    <link type="text/css" src="static/css/example.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/example.css" />
   </head>
   <body>
     <h1>Hello, world!</h1>

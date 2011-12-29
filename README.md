@@ -43,6 +43,9 @@ body { background-color: @pink; }
 
 Include the less file in your HTML:
 
+*Note* we refer to the file with a ```.css``` extention because that is what it
+compiles to.
+
 ```html
 <html>
   <head>
@@ -53,8 +56,6 @@ Include the less file in your HTML:
   </body>
 </html>
 ```
-*Note* we refer to the file with a ```.css``` extention because that is what it
-compiles to.
 
 Tell Kanso to compile the less file and create an attachment:
 

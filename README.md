@@ -85,3 +85,9 @@ Do a kanso push to complete the build:
 ```
 kanso push example
 ```
+
+## Docs
+
+Until 2.0 is released you can browse the docs locally in the package directory
+under ```bootstrap/docs/index.html```.
+

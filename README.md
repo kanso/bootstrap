@@ -36,6 +36,7 @@ template:
 Create a css/less file for your site that includes bootstrap:
 
 file: static/css/example.less
+
 ```css
 @import "packages/bootstrap/bootstrap/lib/bootstrap.less";
 

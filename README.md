@@ -1,7 +1,8 @@
 # Kanso Bootstrap
 
-This package allows you to quickly start using bootstrap in your Kanso project.
-It currently packages the 2.0-wip branch.
+This package allows you to quickly start using (twitter
+bootstrap)[http://twitter.github.com/bootstrap/] in your Kanso project.  It
+currently packages the 2.0-wip branch.
 
 ## Install
 

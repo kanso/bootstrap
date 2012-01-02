@@ -1,7 +1,7 @@
 # Kanso Bootstrap
 
-This package allows you to quickly start using [twitter
-bootstrap](http://twitter.github.com/bootstrap/) and Less in your Kanso
+This package allows you to quickly start using [Twitter
+Bootstrap](http://twitter.github.com/bootstrap/) and Less in your Kanso
 project.  It currently tracks the 2.0-wip branch.
 
 ## Install
@@ -85,5 +85,5 @@ kanso push example
 
 ## Docs
 
-Until 2.0 is released you can browse the docs locally in the package directory
-under ```bootstrap/docs/index.html```.
+Until 2.0 is released you can browse the Bootstrap docs locally in the package
+directory under ```bootstrap/docs/index.html```.

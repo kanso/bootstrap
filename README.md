@@ -1,8 +1,8 @@
 # Kanso Bootstrap
 
 This package allows you to quickly start using [twitter
-bootstrap](http://twitter.github.com/bootstrap/) in your Kanso project.  It
-currently packages the 2.0-wip branch.
+bootstrap](http://twitter.github.com/bootstrap/) and Less in your Kanso
+project.  It currently tracks the 2.0-wip branch.
 
 ## Install
 
@@ -71,18 +71,9 @@ Tell Kanso to compile the less file and create an attachment:
 }
 ```
 
-### Static CSS
+## Deploy
 
-If you prefer to include the static file bootstrap.min.css in your project,
-simply modify your template:
-
-```html
-<link type="text/css" src="packages/bootstrap/bootstrap/bootstrap.min.css" />
-```
-
-## Push
-
-Do a kanso push to complete the build:
+Do a kanso push to make the build and deploy to your CouchDB:
 
 ```
 kanso push example

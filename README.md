@@ -20,9 +20,7 @@ kanso install
 
 ## Configure 
 
-You can simply include the bootstrap library as a static library or configure
-bootstrap to be compiled with less.
-
+Configure bootstrap to be compiled with less.
 
 ### Compiled CSS
 

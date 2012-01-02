@@ -6,10 +6,15 @@ project.  It currently tracks the 2.0-wip branch.
 
 ## Install
 
-Add to your project's kanso.json dependencies setting:
+Add to your project's kanso.json dependencies setting, here is the minimal
+case:
 
 ```
-"bootstrap": null
+"dependencies": {
+    "attachments": null,
+    "less-precompiler": null,
+    "bootstrap": null
+}
 ```
 
 Run kanso install to install in your packages directory:
@@ -20,11 +25,12 @@ kanso install
 
 ## Configure 
 
-Configure bootstrap to be compiled with less.
+Configure bootstrap to be compiled with Less.
 
 ### Compiled CSS
 
-Create a css/less file ```static/css/example.less``` for your site that includes bootstrap:
+Create a css/less file ```static/css/example.less``` for your site that
+includes bootstrap:
 
 ```css
 @import "packages/bootstrap/bootstrap/lib/bootstrap.less";

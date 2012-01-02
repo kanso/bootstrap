@@ -9,7 +9,7 @@ project.  It currently tracks the 2.0-wip branch.
 Add to your project's kanso.json dependencies setting, here is the minimal
 case:
 
-```
+```json
 "dependencies": {
     "attachments": null,
     "less-precompiler": null,

@@ -29,7 +29,7 @@ Configure bootstrap to be compiled with Less.
 
 ### Compiled CSS
 
-Create a css/less file ```static/css/example.less``` for your site that
+Create a css/less file `static/css/example.less` for your site that
 includes bootstrap:
 
 ```css
@@ -40,7 +40,7 @@ body { background-color: @pink; }
 
 Include the less file in your HTML:
 
-*Note* we refer to the file with a ```.css``` extention because that is what it
+*Note* we refer to the file with a `.css` extention because that is what it
 compiles to.
 
 ```html
@@ -86,4 +86,4 @@ kanso push example
 ## Docs
 
 Until 2.0 is released you can browse the Bootstrap docs locally in the package
-directory under ```bootstrap/docs/index.html```.
+directory under `bootstrap/docs/index.html`.

@@ -64,8 +64,7 @@ Tell Kanso to compile the less file and create an attachment:
     "attachments": ["index.html", "static"],
     "less": {
         "compress": true,
-        "compile": "static/css/example.less",
-        "remove_from_attachments": true
+        "compile": "static/css/example.less"
     },
     "dependencies": {
         "attachments": null,

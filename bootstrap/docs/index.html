@@ -35,11 +35,72 @@
           <a class="brand" href="./index.html">Bootstrap</a>
           <ul class="nav">
             <li class="active"><a href="./index.html">Overview</a></li>
-            <li><a href="./scaffolding.html">Scaffolding</a></li>
-            <li><a href="./base-css.html">Base CSS</a></li>
-            <li><a href="./components.html">Components</a></li>
-            <li><a href="./javascript.html">Javascript plugins</a></li>
-            <li><a href="./less.html">Using LESS</a></li>
+            <li class="dropdown">
+              <a href="./scaffolding.html" class="dropdown-toggle" data-toggle="dropdown">
+                Scaffolding
+                <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="./scaffolding.html#grid-system">Grid system</a></li>
+                <li><a href="./scaffolding.html#layouts">Layouts</a></li>
+                <li><a href="./scaffolding.html#responsive">Responsive design</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="./base-css.html" class="dropdown-toggle" data-toggle="dropdown">
+                Base CSS
+                <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="./base-css.html#typography">Typography</a></li>
+                <li><a href="./base-css.html#tables">Tables</a></li>
+                <li><a href="./base-css.html#forms">Forms</a></li>
+                <li><a href="./base-css.html#buttons">Buttons</a></li>
+                <li><a href="./base-css.html#icons">Icons by Glyphicons</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="./components.html" class="dropdown-toggle" data-toggle="dropdown">
+                Components
+                <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="./components.html#buttonGroups">Button groups</a></li>
+                <li><a href="./components.html#buttonDropdowns">Split button dropdowns</a></li>
+                <li><a href="./components.html#navs">Nav, tabs, pills</a></li>
+                <li><a href="./components.html#navbar">Navbar</a></li>
+                <li><a href="./components.html#breadcrumbs">Breadcrumbs</a></li>
+                <li><a href="./components.html#pagination">Pagination</a></li>
+                <li><a href="./components.html#thumbnails">Thumbnails</a></li>
+                <li><a href="./components.html#alerts">Alert messages</a></li>
+                <li><a href="./components.html#progress">Progress bars</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="./javascript.html" class="dropdown-toggle" data-toggle="dropdown">
+                Javascript plugins
+                <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="./javascript.html#transitions">Transition</a></li>
+                <li><a href="./javascript.html#modals">Modal</a></li>
+                <li><a href="./javascript.html#dropdowns">Dropdown</a></li>
+                <li><a href="./javascript.html#scrollspy">Scrollspy</a></li>
+                <li><a href="./javascript.html#tabs">Tab</a></li>
+                <li><a href="./javascript.html#tooltips">Tooltip</a></li>
+                <li><a href="./javascript.html#popovers">Popover</a></li>
+                <li><a href="./javascript.html#alerts">Alert</a></li>
+                <li><a href="./javascript.html#buttons">Button</a></li>
+                <li><a href="./javascript.html#collapse">Collapse</a></li>
+                <li><a href="./javascript.html#carousel">Carousel</a></li>
+                <li><a href="./javascript.html#typeahead">Typeahead</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="./less.html">
+                Using LESS
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -58,7 +119,6 @@
             <p class="download-info">
               <a href="https://github.com/twitter/bootstrap/" class="btn primary btn-large">Download on GitHub</a>
               <a href="./scaffolding.html" class="btn btn-large">Get started &rarr;</a>
-              Currently v2.0.0
             </p>
 
             <div class="benefits">
@@ -84,10 +144,10 @@
           <li><a href="https://github.com/twitter/bootstrap/wiki/Changelog">Changelog</a></li>
           <li class="divider">&middot;</li>
           <li>
-            <iframe class="github-btn" src="http://markdotto.github.com/github-buttons/github-btn.html?user=twitter&repo=bootstrap&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110px" height="20px"></iframe>
+            <iframe class="github-btn" src="http://markdotto.github.com/github-buttons/github-btn.html?user=twitter&repo=bootstrap&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="114px" height="20px"></iframe>
           </li>
           <li>
-            <iframe class="github-btn" src="http://markdotto.github.com/github-buttons/github-btn.html?user=twitter&repo=bootstrap&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="94px" height="20px"></iframe>
+            <iframe class="github-btn" src="http://markdotto.github.com/github-buttons/github-btn.html?user=twitter&repo=bootstrap&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px"></iframe>
           </li>
 <!--
           <li><strong>Authors</strong></li>
@@ -154,7 +214,7 @@
             <div class="span4">
               <img class="icon" src="assets/img/glyphicons/glyphicons_214_resize_small.png">
               <h2>Responsive design</h2>
-              <p>With Bootstrap 2, we've gone fully responsive. Our components are scale according to a range of resolutions and devices to provide a consistent experience, no matter what.</p>
+              <p>With Bootstrap 2, we've gone fully responsive. Our components are scaled according to a range of resolutions and devices to provide a consistent experience, no matter what.</p>
             </div>
             <div class="span4">
               <img class="icon" src="assets/img/glyphicons/glyphicons_266_book_open.png">
@@ -207,7 +267,7 @@
           ================================================== -->
           <h1>Get started in no time.</h1>
           <p class="marketing-byline">Quickly start using Bootstrap within your workflow and development process.</p>
-          <table class="bordered-table getting-started">
+          <table class="table-bordered getting-started">
             <tbody>
               <tr>
                 <td class="quick-start">
@@ -227,7 +287,7 @@
                 </td>
                 <td class="quick-start">
                   <h3>Fork on GitHub</h3>
-                  <p>Download, fork, pull, file issues, and more with the official Bootstrap repo on Github.</p>
+                  <p>Download, fork, pull, file issues, and more with the Bootstrap GitHub repo.</p>
                   <p><a target="_blank" href="https://github.com/twitter/bootstrap" class="btn primary">Bootstrap on GitHub &raquo;</a></p>
                   <p class="current-version">Currently <a href="https://github.com/twitter/bootstrap/wiki/Changelog">v2.0.0</a></p>
                 </td>
@@ -253,5 +313,6 @@
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
     <script src="http://code.jquery.com/jquery-1.7.min.js"></script>
     <script src="assets/js/application.js"></script>
+    <script src="../js/bootstrap-dropdown.js"></script>
   </body>
 </html>

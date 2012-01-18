@@ -75,7 +75,7 @@ Tell Kanso to compile the less files and attach them as css:
 }
 ```
 
-### Sprites
+### Icons
 
 Bootstrap 2.0 provides icons with the following html:
 

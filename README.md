@@ -83,11 +83,11 @@ Bootstrap 2.0 provides icons with the following html:
 <i class="chevron-left"></i>
 ```
 
-To include sprites icons in your project, create a static file where the
-bootstrap library will find the image file.
+To include the icons/sprite in your project, create a static file where the
+bootstrap library will find it.
 
 1. Make a folder, `mkdir static/css/docs/assets/img` in your kanso project
-2. Copy the sprites file into the directory, e.g. `cp packages/bootstrap/bootstrap/static/css/docs/assets/img/glyphicons-halflings-sprite.png static/css/docs/assets/img`
+2. Copy the sprite image into the directory, e.g. `cp packages/bootstrap/bootstrap/static/css/docs/assets/img/glyphicons-halflings-sprite.png static/css/docs/assets/img`
 
 ## Deploy
 

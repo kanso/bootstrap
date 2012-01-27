@@ -22,8 +22,9 @@ $(function(){
   window.prettyPrint && prettyPrint()
 
   // table sort example
-  if ($.fn.tableSorter) {
+  if ($.fn.tablesorter) {
     $("#sortTableExample").tablesorter( { sortList: [[ 1, 0 ]] } )
+    $(".tablesorter-example").tablesorter({ sortList: [[1,0]] })
   }
 
   // add on logic
@@ -38,7 +39,7 @@ $(function(){
   // it's merely here to prevent button clicks form taking you
   // away from your spot on page!!
 
-  $('[href^=#]').click(function (e) {
+  $('section [href^=#]').click(function (e) {
     e.preventDefault()
   })
 
@@ -115,39 +116,89 @@ $(function(){
     })
   })
 
+  // fix sub nav playa
+  var $win = $(window)
+    , $nav = $('.subnav')
+    , navTop = $('.subnav').length && $('.subnav').offset().top - 40
+    , isFixed = 0
+
+  processScroll()
+
+  $win.on('scroll', processScroll)
+
+  function processScroll() {
+    var i, scrollTop = $win.scrollTop()
+    if (scrollTop >= navTop && !isFixed) {
+      isFixed = 1
+      $nav.addClass('subnav-fixed')
+    } else if (scrollTop <= navTop && isFixed) {
+      isFixed = 0
+      $nav.removeClass('subnav-fixed')
+    }
+  }
+
+})
+
+// JS for javascript demos
+$(function () {
+  // tooltip demo
+  $('.tooltip-demo.well').tooltip({
+    selector: "a[rel=tooltip]"
+  })
+  $('.tooltip-test').tooltip()
+
+  // popover demo
+  $("a[rel=popover]")
+    .popover()
+    .click(function(e) {
+      e.preventDefault()
+    })
+
+  // button state demo
+  $('#fat-btn')
+    .click(function () {
+      var btn = $(this)
+      btn.button('loading')
+      setTimeout(function () {
+        btn.button('reset')
+      }, 3000)
+    })
+
+  // carousel demo
+  $('#myCarousel').carousel()
 })
 
 
 // Modified from the original jsonpi https://github.com/benvinegar/jquery-jsonpi
 // by the talented Ben Vinegar
 !function($) {
-    $.ajaxTransport('jsonpi', function(opts, originalOptions, jqXHR) {
-        var url = opts.url;
+  $.ajaxTransport('jsonpi', function(opts, originalOptions, jqXHR) {
+    var url = opts.url;
 
-        return {
-            send: function(_, completeCallback) {
-                var name = 'jQuery_iframe_' + jQuery.now(),
-                    iframe, form;
+    return {
+      send: function(_, completeCallback) {
+        var name = 'jQuery_iframe_' + jQuery.now()
+          , iframe, form
 
-                iframe = $('<iframe>')
-                    .attr('name', name)
-                    .appendTo('head');
+        iframe = $('<iframe>')
+          .attr('name', name)
+          .appendTo('head')
 
-                form = $('<form>')
-                    .attr('method', opts.type) // GET or POST
-                    .attr('action', url)
-                    .attr('target', name);
+        form = $('<form>')
+          .attr('method', opts.type) // GET or POST
+          .attr('action', url)
+          .attr('target', name)
 
-                $.each(opts.params, function(k, v) {
-                    $('<input>')
-                        .attr('type', 'hidden')
-                        .attr('name', k)
-                        .attr('value', v)
-                        .appendTo(form);
-                });
+        $.each(opts.params, function(k, v) {
+          $('<input>')
+            .attr('type', 'hidden')
+            .attr('name', k)
+            .attr('value', v)
+            .appendTo(form)
+        });
 
-                form.appendTo('body').submit();
-            }
-       };
-    });
+        form.appendTo('body').submit()
+      }
+    }
+  })
 }(jQuery);

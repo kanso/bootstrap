@@ -2,7 +2,7 @@
 
 This package allows you to quickly start using [Twitter
 Bootstrap](http://twitter.github.com/bootstrap/) and Less in your Kanso
-project.  It currently tracks the 2.0-wip branch.
+project. 
 
 ## Install
 
@@ -104,7 +104,7 @@ You an browse the Bootstrap docs locally in the package directory under
 
 ## Upgrading
 
-### 2.0.2-kanso.1
+### 2.0.1-kanso.1
 
 The directory structure changed so instead of including lib/bootstrap.less you
 include less/bootstrap.less. You also need to update the sprite image path, see

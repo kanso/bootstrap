@@ -1,5 +1,5 @@
 /* ==========================================================
- * bootstrap-carousel.js v2.0.0
+ * bootstrap-carousel.js v2.0.1
  * http://twitter.github.com/bootstrap/javascript.html#carousel
  * ==========================================================
  * Copyright 2012 Twitter, Inc.
@@ -61,6 +61,7 @@
 
   , pause: function () {
       clearInterval(this.interval)
+      this.interval = null
       return this
     }
 
@@ -87,6 +88,8 @@
       isCycling && this.pause()
 
       $next = $next.length ? $next : this.$element.find('.item')[fallback]()
+
+      if ($next.hasClass('active')) return
 
       if (!$.support.transition && this.$element.hasClass('slide')) {
         this.$element.trigger('slide')
@@ -143,12 +146,12 @@
 
   $(function () {
     $('body').on('click.carousel.data-api', '[data-slide]', function ( e ) {
-      var $this = $(this)
-        , $target = $($this.attr('data-target') || $this.attr('href'))
+      var $this = $(this), href
+        , $target = $($this.attr('data-target') || (href = $this.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '')) //strip for ie7
         , options = !$target.data('modal') && $.extend({}, $target.data(), $this.data())
       $target.carousel(options)
       e.preventDefault()
     })
   })
 
-}( window.jQuery )
+}( window.jQuery );

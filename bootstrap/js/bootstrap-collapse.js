@@ -1,5 +1,5 @@
 /* =============================================================
- * bootstrap-collapse.js v2.0.0
+ * bootstrap-collapse.js v2.0.1
  * http://twitter.github.com/bootstrap/javascript.html#collapse
  * =============================================================
  * Copyright 2012 Twitter, Inc.
@@ -71,7 +71,7 @@
 
       this.$element
         .removeClass('collapse')
-        [dimension](size || '')
+        [dimension](size || 'auto')
         [0].offsetWidth
 
       this.$element.addClass('collapse')
@@ -124,11 +124,13 @@
 
   $(function () {
     $('body').on('click.collapse.data-api', '[data-toggle=collapse]', function ( e ) {
-      var $this = $(this)
-        , target = $this.attr('data-target') || e.preventDefault() || $this.attr('href')
+      var $this = $(this), href
+        , target = $this.attr('data-target')
+          || e.preventDefault()
+          || (href = $this.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '') //strip for ie7
         , option = $(target).data('collapse') ? 'toggle' : $this.data()
       $(target).collapse(option)
     })
   })
 
-}( window.jQuery )
+}( window.jQuery );

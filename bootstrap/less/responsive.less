@@ -31,37 +31,6 @@
   visibility: hidden;
 }
 
-// Visibility utilities
-
-// For desktops
-.visible-phone     { display: none; }
-.visible-tablet    { display: none; }
-.visible-desktop   { display: block; }
-.hidden-phone      { display: block; }
-.hidden-tablet     { display: block; }
-.hidden-desktop    { display: none; }
-
-// Phones only
-@media (max-width: 767px) {
-  // Show
-  .visible-phone     { display: block; }
-  // Hide
-  .hidden-phone      { display: none; }
-  // Hide everything else
-  .hidden-desktop    { display: block; }
-  .visible-desktop   { display: none; }
-}
-
-// Tablets & small desktops only
-@media (min-width: 768px) and (max-width: 979px) {
-  // Show
-  .visible-tablet    { display: block; }
-  // Hide
-  .hidden-tablet     { display: none; }
-  // Hide everything else
-  .hidden-desktop    { display: block; }
-  .visible-desktop   { display: none; }
-}
 
 
 // UP TO LANDSCAPE PHONE
@@ -188,13 +157,13 @@
 @media (min-width: 768px) and (max-width: 979px) {
 
   // Fixed grid
-  #grid > .core(42px, 20px);
+  #gridSystem > .generate(12, 42px, 20px);
 
   // Fluid grid
-  #grid > .fluid(5.801104972%, 2.762430939%);
+  #fluidGridSystem > .generate(12, 5.801104972%, 2.762430939%);
 
   // Input grid
-  #grid > .input(42px, 20px);
+  #inputGridSystem > .generate(12, 42px, 20px);
 
 }
 
@@ -328,7 +297,6 @@
 @media (min-width: 980px) {
   .nav-collapse.collapse {
     height: auto !important;
-    overflow: visible !important;
   }
 }
 
@@ -340,13 +308,13 @@
 @media (min-width: 1200px) {
 
   // Fixed grid
-  #grid > .core(70px, 30px);
+  #gridSystem > .generate(12, 70px, 30px);
 
   // Fluid grid
-  #grid > .fluid(5.982905983%, 2.564102564%);
+  #fluidGridSystem > .generate(12, 5.982905983%, 2.564102564%);
 
   // Input grid
-  #grid > .input(70px, 30px);
+  #inputGridSystem > .generate(12, 70px, 30px);
 
   // Thumbnails
   .thumbnails {

@@ -1,17 +1,9 @@
-[Twitter Bootstrap](http://twitter.github.com/bootstrap)
+TWITTER BOOTSTRAP
 =================
 
-Bootstrap provides simple and flexible HTML, CSS, and Javascript for popular user interface components and interactions. In other words, it's a front-end toolkit for faster, more beautiful web development. It's created and maintained by [Mark Otto](http://twitter.com/mdo) and [Jacob Thornton](http://twitter.com/fat) at Twitter.
+Bootstrap is Twitter's toolkit for kickstarting CSS for websites, apps, and more. It includes base CSS styles for typography, forms, buttons, tables, grids, navigation, alerts, and more.
 
-To get started, checkout http://twitter.github.com/bootstrap!
-
-
-
-Quick start
------------
-
-Clone the repo, `git clone git@github.com:twitter/bootstrap.git`, or [download the latest release](https://github.com/twitter/bootstrap/zipball/master).
-
+To get started -- checkout http://twitter.github.com/bootstrap!
 
 
 Versioning
@@ -32,7 +24,6 @@ And constructed with the following guidelines:
 For more information on SemVer, please visit http://semver.org/.
 
 
-
 Bug tracker
 -----------
 
@@ -41,12 +32,10 @@ Have a bug? Please create an issue here on GitHub!
 https://github.com/twitter/bootstrap/issues
 
 
-
 Twitter account
 ---------------
 
-Keep up to date on announcements and more by following Bootstrap on Twitter, [@TwBootstrap](http://twitter.com/TwBootstrap).
-
+Keep up to date on announcements and more by following Bootstrap on Twitter, <a href="http://twitter.com/TwBootstrap">@TwBootstrap</a>.
 
 
 Mailing list
@@ -59,14 +48,12 @@ twitter-bootstrap@googlegroups.com
 http://groups.google.com/group/twitter-bootstrap
 
 
-
 IRC
 ---
 
 Server: irc.freenode.net
 
 Channel: ##twitter-bootstrap (the double ## is not a typo)
-
 
 
 Developers
@@ -81,7 +68,6 @@ Runs the LESS compiler to rebuild the `/less` files and compiles the docs pages.
 This is a convenience method for watching just Less files and automatically building them whenever you save. Requires the Watchr gem.
 
 
-
 Authors
 -------
 
@@ -94,7 +80,6 @@ Authors
 
 + http://twitter.com/fat
 + http://github.com/fat
-
 
 
 Copyright and license

@@ -87,7 +87,7 @@ To include the icons/sprite in your project, include the sprites `png` files
 in your static diretory.
 
 1. Make a folder, `mkdir -p static/img` in your kanso project
-2. Copy the sprite images into the directory, e.g. `cp packages/bootstrap/bootstrap/img/\* static/img`
+2. Copy the sprite images into the directory, e.g. `cp packages/bootstrap/bootstrap/img/* static/img`
 
 ## Deploy
 

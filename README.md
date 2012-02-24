@@ -80,7 +80,7 @@ Tell Kanso to compile the less files and attach them as css:
 Bootstrap 2.0 provides icons with the following html:
 
 ```html
-<i class="chevron-left"></i>
+<i class="icon-chevron-left"></i>
 ```
 
 To include the icons/sprite in your project, include the sprites `png` files 

@@ -33,7 +33,7 @@ Create a css/less file `static/css/example.less` for your site that
 includes bootstrap:
 
 ```css
-@import "packages/bootstrap/bootstrap/lib/bootstrap.less";
+@import "packages/bootstrap/bootstrap/less/bootstrap.less";
 /* Now use bootstrap and less! */
 body { background-color: @pink; }
 ```
@@ -83,11 +83,11 @@ Bootstrap 2.0 provides icons with the following html:
 <i class="chevron-left"></i>
 ```
 
-To include the icons/sprite in your project, create a static file where the
-bootstrap library will find it.
+To include the icons/sprite in your project, include the sprites `png` files 
+in your static diretory.
 
-1. Make a folder, `mkdir -p static/css/docs/assets/img` in your kanso project
-2. Copy the sprite image into the directory, e.g. `cp packages/bootstrap/bootstrap/static/css/docs/assets/img/glyphicons-halflings-sprite.png static/css/docs/assets/img`
+1. Make a folder, `mkdir -p static/img` in your kanso project
+2. Copy the sprite images into the directory, e.g. `cp packages/bootstrap/bootstrap/img/\* static/img`
 
 ## Deploy
 
@@ -99,5 +99,14 @@ kanso push example
 
 ## Docs
 
-Until 2.0 is released you can browse the Bootstrap docs locally in the package
-directory under `bootstrap/docs/index.html`.
+You an browse the Bootstrap docs locally in the package directory under
+`bootstrap/docs/index.html` or check the website.
+
+## Upgrading
+
+### 2.0.2-kanso.1
+
+The directory structure changed so instead of including lib/bootstrap.less you
+include less/bootstrap.less. You also need to update the sprite image path, see
+the Icons section above.
+

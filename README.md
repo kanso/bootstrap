@@ -78,15 +78,15 @@ them as css:
 
 ### Icons
 
-Bootstrap 2.0 provides icons with the following html:
+Bootstrap 2.0 provides icons, you just need to specify the class to use. e.g.
 
 ```html
 <i class="icon-chevron-left"></i>
 ```
 
-The images and js files are include as attachments, but the default path to the
-needs adjustment.  So to include the sprites `png` files include this in your
-less file:
+Images and Javascript files are include as attachments, but the default path to
+them needs adjustment.  Less variables come in handy for this. To include the
+sprite `png` files include this in your less file:
 
 ```
 @iconSpritePath: "../../bootstrap/img/glyphicons-halflings.png";
@@ -110,8 +110,9 @@ You an browse the Bootstrap docs locally in the package directory under
 
 ### 2.0.1-kanso.2
 
-Attaching images and js files by default now.  You may have to adjust your less
-code to your sprite path as shown in the Icons section.
+Attaching images and js files by default now, so just reference them from your
+template and less code, instead of copying files.  Update your sprite path as
+shown in the Icons section above.
 
 ### 2.0.1-kanso.1
 

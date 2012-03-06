@@ -33,7 +33,7 @@ Create a css/less file `static/css/example.less` for your site that
 includes bootstrap:
 
 ```css
-@import "bootstrap/bootstrap.less";
+@import "bootstrap/less/bootstrap.less";
 /* Now use bootstrap and less! */
 body { background-color: @pink; }
 ```
@@ -78,15 +78,15 @@ them as css:
 
 ### Icons
 
-Bootstrap 2.0 provides icons, you just need to specify the class to use. e.g.
+Bootstrap 2.0 provides icons with the following html:
 
 ```html
 <i class="icon-chevron-left"></i>
 ```
 
-Images and Javascript files are include as attachments, but the default path to
-them needs adjustment.  Less variables come in handy for this. To include the
-sprite `png` files include this in your less file:
+The images and js files are include as attachments, but the default path needs
+adjustment.  So to include the sprite `png` files just modify the less
+variables. e.g.
 
 ```
 @iconSpritePath: "../../bootstrap/img/glyphicons-halflings.png";
@@ -110,9 +110,8 @@ You an browse the Bootstrap docs locally in the package directory under
 
 ### 2.0.1-kanso.2
 
-Attaching images and js files by default now, so just reference them from your
-template and less code, instead of copying files.  Update your sprite path as
-shown in the Icons section above.
+Attaching images and js files by default now.  You may have to adjust your less
+code to your sprite path as shown in the Icons section.
 
 ### 2.0.1-kanso.1
 

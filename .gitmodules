@@ -1,3 +1,4 @@
 [submodule "bootstrap"]
-	path = bootstrap
-	url = /Users/mandric/tmp/bootstrap-pkg/bootstrap
+    path = bootstrap
+    url = https://github.com/twitter/bootstrap.git
+

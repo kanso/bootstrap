@@ -1,8 +1,4 @@
-# first clone and checkout target version, e.g.
-# git clone https://github.com/twitter/bootstrap.git
-# git checkout v2.0.1
-
-PACKAGE = bootstrap
+PACKAGE = kanso-bootstrap
 BUILDDIR = dist
 CHECKOUTDIR = bootstrap
 
@@ -22,6 +18,12 @@ build:
 init: 
 	git submodule init
 	git submodule update
+
+deploy:
+	kanso publish dist
+
+redeploy:
+	kanso publish -f dist
 
 clean: 
 	rm -rf $(BUILDDIR)

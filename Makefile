@@ -20,10 +20,10 @@ init:
 	git submodule update
 
 deploy:
-	kanso publish dist
+	kanso publish $(BUILDDIR)
 
 redeploy:
-	kanso publish -f dist
+	kanso publish -f $(BUILDDIR)
 
 clean: 
 	rm -rf $(BUILDDIR)

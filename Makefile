@@ -6,7 +6,7 @@ PACKAGE = bootstrap
 BUILDDIR = dist
 CHECKOUTDIR = bootstrap
 
-all: build
+all: init build
 
 build:	
 	mkdir -p $(BUILDDIR)/bootstrap/{less,img,js,docs}
@@ -18,6 +18,10 @@ build:
 	cp $(CHECKOUTDIR)/LICENSE \
 	   $(CHECKOUTDIR)/README.md \
 	   $(BUILDDIR)/bootstrap/
+
+init: 
+	git submodule init
+	git submodule update
 
 clean: 
 	rm -rf $(BUILDDIR)

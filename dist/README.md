@@ -84,9 +84,9 @@ Bootstrap 2.0 provides icons with the following html:
 <i class="icon-chevron-left"></i>
 ```
 
-The images and js files are include as attachments, but the default path to the
-needs adjustment.  So to include the sprites `png` files include this in your
-less file:
+The images and js files are include as attachments, but the default path needs
+adjustment.  So to include the sprite `png` files just modify the less
+variables. e.g.
 
 ```
 @iconSpritePath: "../../bootstrap/img/glyphicons-halflings.png";

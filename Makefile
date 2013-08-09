@@ -10,6 +10,7 @@ build:
 	cp kanso.json README.md $(BUILDDIR)
 	cp -rp $(CHECKOUTDIR)/less/* $(BUILDDIR)/bootstrap/less
 	cp -rp $(CHECKOUTDIR)/js/*.js $(BUILDDIR)/bootstrap/js
+	cp -rp $(CHECKOUTDIR)/dist/js/*.js $(BUILDDIR)/bootstrap/js
 	cp -rp $(CHECKOUTDIR)/assets/ico/* $(BUILDDIR)/bootstrap/ico
 	cp $(CHECKOUTDIR)/LICENSE \
 	   $(CHECKOUTDIR)/README.md \
